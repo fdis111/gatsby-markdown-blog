@@ -4,14 +4,15 @@ import { graphql } from "gatsby";
 export default function Template({ data }) {
   const { markdownRemark } = data;
   const { fronmatter, html } = markdownRemark;
+  console.log(fronmatter);
 
-  const { title, date } = fronmatter;
+  // const { title, date } = fronmatter;
 
   return (
     <div className="blog-post-container">
       <div className="blog-post">
-        <h1>{title}</h1>
-        <h2>{date}</h2>
+        {/* <h1>{fronmatter.title}</h1> */}
+        {/* <h2>{fronmatter.date}</h2> */}
         <div
           className="blog-post-content"
           dangerouslySetInnerHTML={{ __html: html }}
