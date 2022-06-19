@@ -1,5 +1,6 @@
 import * as React from "react";
 import { graphql } from "gatsby";
+import Layout from "../components/layout";
 
 const IndexPage = ({ data }) => {
   const { edges } = data.allMarkdownRemark;
@@ -24,11 +25,11 @@ const IndexPage = ({ data }) => {
   };
 
   return (
-    <main>
+    <Layout>
       <h1>Just a gatsby Blog</h1>
 
       {renderPosts(posts)}
-    </main>
+    </Layout>
   );
 };
 

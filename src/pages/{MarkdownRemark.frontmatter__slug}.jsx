@@ -1,18 +1,19 @@
 import React from "react";
 import { graphql } from "gatsby";
+import Layout from "../components/layout";
 
 export default function Template({ data }) {
   const { html } = data.markdownRemark;
 
   return (
-    <div>
+    <Layout>
       <div>
         <div dangerouslySetInnerHTML={{ __html: html }} />
         <p>
           <a href="/stories">Stories</a>
         </p>
       </div>
-    </div>
+    </Layout>
   );
 }
 
