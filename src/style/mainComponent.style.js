@@ -7,6 +7,7 @@ const MainComponent = styled.main`
   padding: 10px;
   margin: auto;
   font-family: "Inter", sans-serif;
+  line-height: 26px;
   /* font-family: "Open Sans", sans-serif; */
 
   color: #121212;
@@ -22,7 +23,6 @@ const MainComponent = styled.main`
   p {
     margin-top: 1.25em;
     margin-bottom: 1.25em;
-    line-height: 28px;
   }
 `;
 
