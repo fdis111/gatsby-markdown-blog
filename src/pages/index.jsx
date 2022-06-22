@@ -21,7 +21,7 @@ const IndexPage = () => {
         My tasks consist in :
         <ul>
           <li>Prepare trainings sessions,</li>
-          <li>Follow up on the learners skills development</li>
+          <li>Follow up on the learners skills development,</li>
           <li> And manage projects</li>
         </ul>
       </p>
