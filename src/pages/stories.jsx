@@ -10,7 +10,7 @@ const IndexPage = ({ data }) => {
     ...post.node.frontmatter,
   }));
 
-  const renderPosts = (posts) => {
+  const renderPosts = () => {
     return (
       <ul>
         {posts.map(({ id, title, slug }) => {
