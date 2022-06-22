@@ -1,12 +1,16 @@
 import * as React from "react";
 import MainComponent from "../style/mainComponent.style";
+import Navbar from "./navbar";
 
 const Layout = ({ pageTitle, children }) => {
   return (
-    <MainComponent>
-      <title>{pageTitle}</title>
-      {children}
-    </MainComponent>
+    <>
+      <Navbar />
+      <MainComponent>
+        <title>{pageTitle}</title>
+        {children}
+      </MainComponent>
+    </>
   );
 };
 
