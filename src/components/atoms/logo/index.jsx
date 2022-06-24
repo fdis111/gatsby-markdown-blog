@@ -1,10 +1,9 @@
 import * as React from "react";
-import {StaticImage} from 'gatsby-plugin-image';
 
 
 
 const Logo = () => {
-    return <StaticImage style={{ color: 'red' }} src="./signature.svg"/>
+    return <span style={{ fontSize: "80px", color: "#121212" }} className="icon-logo"></span>
 }
 
 

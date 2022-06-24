@@ -1,8 +1,8 @@
 import * as React from "react";
-import {StaticImage} from 'gatsby-plugin-image';
 
 const BlogIcon = () => {
-    return <StaticImage height="20" src="./blogIcon.svg"/>
+    
+    return <span style={{ fontSize: "24px", textDecoration: "none"  }} className="icon-blog"></span>
 }
 
 
