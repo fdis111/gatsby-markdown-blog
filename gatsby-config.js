@@ -18,6 +18,7 @@ module.exports = {
       resolve: `gatsby-plugin-styled-components`,
       options: { displayName: false },
     },
+    `gatsby-plugin-image`,
     `gatsby-transformer-remark`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
