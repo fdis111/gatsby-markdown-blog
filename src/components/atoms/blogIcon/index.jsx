@@ -2,7 +2,7 @@ import * as React from "react";
 
 const BlogIcon = () => {
     
-    return <span style={{ fontSize: "24px", textDecoration: "none"  }} className="icon-blog"></span>
+    return <span title="Stories" style={{ fontSize: "24px", textDecoration: "none"  }} className="icon-blog"></span>
 }
 
 
