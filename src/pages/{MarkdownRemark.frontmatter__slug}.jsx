@@ -1,5 +1,6 @@
 import React from "react";
-import { graphql } from "gatsby";
+import { graphql, Link } from "gatsby";
+
 import Layout from "../components/layout";
 
 export default function Template({ data }) {
@@ -10,7 +11,7 @@ export default function Template({ data }) {
       <div>
         <div dangerouslySetInnerHTML={{ __html: html }} />
         <p>
-          <a href="/stories">Stories</a>
+          <Link to="/stories">&#8592; Stories</Link>
         </p>
       </div>
     </Layout>
