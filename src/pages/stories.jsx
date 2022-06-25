@@ -1,5 +1,5 @@
 import * as React from "react";
-import { graphql } from "gatsby";
+import { graphql, Link } from "gatsby";
 import Layout from "../components/layout";
 
 const IndexPage = ({ data }) => {
@@ -16,7 +16,7 @@ const IndexPage = ({ data }) => {
         {posts.map(({ id, title, slug }) => {
           return (
             <li key={id}>
-              <a href={slug}>{title}</a>
+              <Link to={slug}>{title}</Link>
             </li>
           );
         })}
