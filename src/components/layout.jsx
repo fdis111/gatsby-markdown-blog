@@ -1,15 +1,17 @@
 import * as React from "react";
-import MainComponent from "../style/mainComponent.style";
+import GlobalStyle from "../style/globalStyles";
 import Navbar from "./navbar";
+import "../style/typography.css";
 
 const Layout = ({ pageTitle, children }) => {
   return (
     <>
+      <GlobalStyle />
       <Navbar />
-      <MainComponent>
+      <main>
         <title>{pageTitle}</title>
         {children}
-      </MainComponent>
+      </main>
     </>
   );
 };

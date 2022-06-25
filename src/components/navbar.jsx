@@ -1,18 +1,17 @@
 import * as React from "react";
 import styled from "styled-components";
-import { Link } from "gatsby"
-import Logo from './atoms/logo';
-import BlogIcon from './atoms/blogIcon'
+import { Link } from "gatsby";
+import Logo from "./atoms/logo";
+import BlogIcon from "./atoms/blogIcon";
 
-import "../style/icons.css"
+import "../style/icons.css";
 
 const NavbarContainer = styled.div`
-  max-width: 1200px;
+  max-width: 1000px;
 
-  /* padding: 10px; */
+  padding: 10px;
 
   margin: auto;
-  /* height: 100px; */
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -23,8 +22,12 @@ const NavbarContainer = styled.div`
 
   .nav-links{
     
-    a{
+    a {
       color: #828282
+
+      &:hover{
+        color: #121212
+      }
     }
   }
 
@@ -36,7 +39,7 @@ const Navbar = () => {
     <NavbarContainer>
       <div>
         <Link to="/" activeStyle={{ color: "#121212" }}>
-          <Logo/>
+          <Logo />
         </Link>
       </div>
       <div className="nav-links">
