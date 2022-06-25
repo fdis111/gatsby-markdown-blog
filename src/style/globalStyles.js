@@ -13,7 +13,7 @@ const GlobalStyle = createGlobalStyle`
   }
   
   .page-content{
-    padding: 4rem 0;
+    padding: 1.5rem 0;
   }
 
   
