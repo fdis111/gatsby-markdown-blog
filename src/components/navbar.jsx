@@ -7,6 +7,7 @@ import { github } from "../util/externalLinks";
 
 import "../style/icons.css";
 import GithubIcon from "./atoms/githubIcon";
+import TipsIcon from "./atoms/tipsIcon";
 
 const NavbarContainer = styled.div`
   margin: 20px 0;
@@ -44,6 +45,9 @@ const Navbar = () => {
       <div className="nav-links">
         <Link to="/stories" activeStyle={{ color: "#121212" }}>
           <BlogIcon />
+        </Link>
+        <Link to="/tips" activeStyle={{ color: "#121212" }}>
+          <TipsIcon />
         </Link>
         <a href={github} target="blank">
           <GithubIcon />
