@@ -10,7 +10,11 @@ const GlobalStyle = createGlobalStyle`
     max-width: 65ch;
     padding: 10px;
     margin: auto;
-  }  
+  }
+  
+  .page-content{
+    padding: 4rem 0;
+  }
 `;
 
 export default GlobalStyle;

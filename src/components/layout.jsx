@@ -7,10 +7,10 @@ const Layout = ({ pageTitle, children }) => {
   return (
     <>
       <GlobalStyle />
-      <Navbar />
+      <title>{pageTitle}</title>
       <main>
-        <title>{pageTitle}</title>
-        {children}
+        <Navbar />
+        <div className="page-content">{children}</div>
       </main>
     </>
   );
