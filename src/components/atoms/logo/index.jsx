@@ -1,11 +1,7 @@
 import * as React from "react";
 
 const Logo = () => {
-  return (
-    <span style={{ fontSize: "35px", color: "#121212" }} className="logo">
-      Fdis
-    </span>
-  );
+  return <span className="logo">fdis</span>;
 };
 
 export default Logo;

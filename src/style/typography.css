@@ -2,6 +2,9 @@
 
 .logo {
   font-family: "Gochi Hand", sans-serif !important;
+  /* font-family: "Inter", sans-serif; */
+  font-size: 28px;
+  color: #121212;
   font-weight: 400 !important;
 }
 

@@ -1,4 +1,10 @@
 import * as React from "react";
+import {
+  github,
+  kinshasadigitalAcademy,
+  linkedin,
+  instagram
+} from "../util/externalLinks";
 import Layout from "../components/layout";
 
 const IndexPage = () => {
@@ -14,7 +20,7 @@ const IndexPage = () => {
 
       <p>
         Currently I work at{" "}
-        <a href="https://www.kinshasadigital.academy/" target="blank">
+        <a href={kinshasadigitalAcademy} target="blank">
           Kinshasa Digital Academy
         </a>{" "}
         as a full-stack developer trainer. <br />
@@ -30,16 +36,13 @@ const IndexPage = () => {
       </p>
       <p>
         You can follow me on{" "}
-        <a href="https://github.com/fdis111" target="blank">
+        <a href={github} target="blank">
           GitHub,
         </a>{" "}
-        <a
-          href="https://www.linkedin.com/in/fran%C3%A7ois-disubi-200653199/"
-          target="blank"
-        >
+        <a href={linkedin} target="blank">
           Linkedin,
         </a>{" "}
-        <a href="https://www.instagram.com/big_diss_blckb/" target="blank">
+        <a href={instagram} target="blank">
           Instagram
         </a>{" "}
         or you can email me at{" "}
