@@ -26,6 +26,7 @@ const NavbarContainer = styled.div`
   }
   .nav-links {
     a {
+      font-family: "Inter", sans-serif;
       color: #cbcbcb;
       display: inline-block;
       padding-left: 1em;
@@ -56,9 +57,9 @@ const Navbar = () => {
             <Link to="/tips" activeStyle={{ color: "#121212" }}>
               <TipsIcon />
             </Link>
-            <a href={github} target="blank">
+            {/* <a href={github} target="blank">
               <GithubIcon />
-            </a>
+            </a> */}
           </div>
         </div>
       </Container>
