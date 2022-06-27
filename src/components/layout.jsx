@@ -1,5 +1,6 @@
 import * as React from "react";
 import GlobalStyle from "../style/globalStyles";
+import Container from "./atoms/container";
 import Navbar from "./navbar";
 import "../style/typography.css";
 
@@ -8,10 +9,12 @@ const Layout = ({ pageTitle, children }) => {
     <>
       <GlobalStyle />
       <title>{pageTitle}</title>
-      <main>
-        <Navbar />
-        <div className="page-content">{children}</div>
-      </main>
+      <Navbar />
+      <Container>
+        <main>
+          <div className="page-content">{children}</div>
+        </main>
+      </Container>
     </>
   );
 };

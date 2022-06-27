@@ -6,11 +6,6 @@ const GlobalStyle = createGlobalStyle`
     padding: 0; 
     box-sizing: border-box;
   }
-  main{
-    max-width: 65ch;
-    padding: 10px;
-    margin: auto;
-  }
   
   .page-content{
     padding: 1.5rem 0;
