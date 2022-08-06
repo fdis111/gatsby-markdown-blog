@@ -1,6 +1,9 @@
 import * as React from "react";
 import { graphql, Link } from "gatsby";
 import Layout from "../components/layout";
+import StoriesTemplate from "../components/templates/storiesTemplate";
+
+
 
 const IndexPage = ({ data }) => {
   const { edges } = data.allMarkdownRemark;
@@ -10,26 +13,8 @@ const IndexPage = ({ data }) => {
     ...post.node.frontmatter,
   }));
 
-  const renderPosts = () => {
-    return (
-      <ul>
-        {posts.map(({ id, title, slug }) => {
-          return (
-            <li key={id}>
-              <Link to={slug}>{title}</Link>
-            </li>
-          );
-        })}
-      </ul>
-    );
-  };
-
   return (
-    <Layout>
-      <h1>Just a gatsby Blog</h1>
-
-      {renderPosts(posts)}
-    </Layout>
+    <StoriesTemplate posts={posts}/>
   );
 };
 
