@@ -8,7 +8,11 @@ const StoriesTemplate = ({ posts }) => {
     <Layout>
       <StoriesTemplateContainer>
         <div>
-          <h1>Just a gatsby Blog</h1>
+          <h1>Stories</h1>
+          <p>
+            New skills I learned, technologies I used or tutorials, sharing is
+            caring.
+          </p>
         </div>
         <div>
           <Posts posts={posts} />
