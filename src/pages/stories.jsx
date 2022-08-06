@@ -3,8 +3,6 @@ import { graphql, Link } from "gatsby";
 import Layout from "../components/layout";
 import StoriesTemplate from "../components/templates/storiesTemplate";
 
-
-
 const IndexPage = ({ data }) => {
   const { edges } = data.allMarkdownRemark;
 
@@ -13,9 +11,7 @@ const IndexPage = ({ data }) => {
     ...post.node.frontmatter,
   }));
 
-  return (
-    <StoriesTemplate posts={posts}/>
-  );
+  return <StoriesTemplate posts={posts} />;
 };
 
 export default IndexPage;

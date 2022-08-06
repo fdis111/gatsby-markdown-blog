@@ -1,10 +1,8 @@
 import * as React from "react";
-import HomePageTemplate from '../components/templates/homeTemplate'
+import HomePageTemplate from "../components/templates/homeTemplate";
 
 const IndexPage = () => {
-  return (
-    <HomePageTemplate />
-  );
+  return <HomePageTemplate />;
 };
 
 export default IndexPage;
