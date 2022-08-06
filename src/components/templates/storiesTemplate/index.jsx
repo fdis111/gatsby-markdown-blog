@@ -1,12 +1,19 @@
 import React from "react";
 import Layout from "../../layout";
 import Posts from "../../molecules/posts";
+import StoriesTemplateContainer from "./style";
 
 const StoriesTemplate = ({ posts }) => {
   return (
     <Layout>
-      <h1>Just a gatsby Blog</h1>
-      <Posts posts={posts} />
+      <StoriesTemplateContainer>
+        <div>
+          <h1>Just a gatsby Blog</h1>
+        </div>
+        <div>
+          <Posts posts={posts} />
+        </div>
+      </StoriesTemplateContainer>
     </Layout>
   );
 };
