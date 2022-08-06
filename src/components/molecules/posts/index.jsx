@@ -1,18 +1,17 @@
 import React from "react";
 import { Link } from "gatsby";
+import Post from "../../atoms/post";
 
 const Posts = ({ posts }) => {
   return (
     <div>
-      <ul>
-        {posts.map(({ id, title, slug }) => {
-          return (
-            <li key={id}>
-              <Link to={slug}>{title}</Link>
-            </li>
-          );
-        })}
-      </ul>
+      {posts.map((post) => {
+        return <Post key={post.id} post={post} />;
+      })}
+
+      <p>
+        <Link to="/">&#8592; Home</Link>
+      </p>
     </div>
   );
 };

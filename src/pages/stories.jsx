@@ -6,11 +6,15 @@ import StoriesTemplate from "../components/templates/storiesTemplate";
 const IndexPage = ({ data }) => {
   const { edges } = data.allMarkdownRemark;
 
-  const posts = edges.map((post) => ({
-    id: post.node.id,
-    ...post.node.frontmatter,
-  }));
-
+  const posts = edges.map((post) => {
+    const { id, excerpt, wordCount } = post.node;
+    return {
+      id,
+      words: wordCount.words,
+      excerpt,
+      ...post.node.frontmatter,
+    };
+  });
   return <StoriesTemplate posts={posts} />;
 };
 
@@ -27,6 +31,9 @@ export const pageQuery = graphql`
             date(formatString: "MMMM DD, YYYY")
             slug
             title
+          }
+          wordCount {
+            words
           }
         }
       }
