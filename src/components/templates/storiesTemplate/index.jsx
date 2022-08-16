@@ -1,5 +1,5 @@
 import React from "react";
-import Layout from "../../layout";
+import Layout from "../../atoms/layout";
 import Posts from "../../molecules/posts";
 import StoriesTemplateContainer from "./style";
 

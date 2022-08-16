@@ -1,8 +1,8 @@
 import * as React from "react";
-import GlobalStyle from "../style/globalStyles";
-import Container from "./atoms/container";
-import Navbar from "./navbar";
-import "../style/typography.css";
+import GlobalStyle from "../../style/globalStyles";
+import Container from "./container";
+import Navbar from "../navbar";
+import "../../style/typography.css";
 
 const Layout = ({ pageTitle, children }) => {
   return (

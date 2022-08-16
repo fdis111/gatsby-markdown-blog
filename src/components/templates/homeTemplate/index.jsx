@@ -5,7 +5,7 @@ import {
   linkedin,
   instagram,
 } from "../../../util/externalLinks";
-import Layout from "../../layout";
+import Layout from "../../atoms/layout";
 
 const Index = () => {
   return (
