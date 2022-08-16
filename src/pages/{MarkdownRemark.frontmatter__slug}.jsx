@@ -37,11 +37,9 @@ export default function Template({ data }) {
     <Layout>
       <div>
         <h1>{title}</h1>
-        <div>
-          <ReactMarkdown components={MarkdownComponent}>
-            {rawMarkdownBody}
-          </ReactMarkdown>
-        </div>
+        <ReactMarkdown components={MarkdownComponent}>
+          {rawMarkdownBody}
+        </ReactMarkdown>
         <p>
           <Link to="/stories">&#8592; Stories</Link>
         </p>
