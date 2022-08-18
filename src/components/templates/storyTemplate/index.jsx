@@ -5,6 +5,7 @@ import ReactMarkdown from "react-markdown";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import { gruvboxDark } from "react-syntax-highlighter/dist/cjs/styles/prism";
 import { Link } from "gatsby";
+import StoryTemplateContsainer from "./style";
 
 export default function StoryTemplate({ frontmatter, rawMarkdownBody }) {
   const { title } = frontmatter;
@@ -31,15 +32,21 @@ export default function StoryTemplate({ frontmatter, rawMarkdownBody }) {
 
   return (
     <Layout>
-      <div>
-        <h1>{title}</h1>
+      <StoryTemplateContsainer>
+        <div>
+          <h1>{title}</h1>
+        </div>
+        <div></div>
+        <div />
         <ReactMarkdown components={MarkdownComponent}>
           {rawMarkdownBody}
         </ReactMarkdown>
-        <p>
-          <Link to="/stories">&#8592; Stories</Link>
-        </p>
-      </div>
+        <div>
+          <p>
+            <Link to="/stories">&#8592; Stories</Link>
+          </p>
+        </div>
+      </StoryTemplateContsainer>
     </Layout>
   );
 }

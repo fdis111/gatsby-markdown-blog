@@ -1,7 +1,7 @@
 ---
 slug: "/stories/my-first-post"
 date: "2019-05-04"
-title: "My first blog post"
+title: "10 Best Free Image Hosting Sites in 2021"
 ---
 
 ![icon](https://res.cloudinary.com/dxtggeaor/image/upload/v1660672183/fdis111_g0djpr.png)
