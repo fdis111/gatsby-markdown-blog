@@ -57,9 +57,6 @@ const Navbar = () => {
             <Link to="/tips" activeStyle={{ color: "#121212" }}>
               <TipsIcon />
             </Link>
-            {/* <a href={github} target="blank">
-              <GithubIcon />
-            </a> */}
           </div>
         </div>
       </Container>
