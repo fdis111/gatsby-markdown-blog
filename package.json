@@ -12,7 +12,10 @@
     "start": "gatsby develop",
     "build": "gatsby build",
     "serve": "gatsby serve",
-    "clean": "gatsby clean"
+    "clean": "gatsby clean",
+    "lint": "eslint . --fix --max-warnings=0",
+    "format": "prettier . --write",
+    "prepare": "husky install"
   },
   "dependencies": {
     "add": "^2.0.6",
@@ -32,11 +35,28 @@
     "highlight.js": "^11.6.0",
     "install": "^0.13.0",
     "npm": "^8.12.2",
+    "prop-types": "^15.8.1",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
     "react-markdown": "^8.0.3",
     "react-syntax-highlighter": "^15.5.0",
     "styled-components": "^5.3.5",
     "yarn": "^1.22.19"
+  },
+  "devDependencies": {
+    "eslint": "^7.32.0 || ^8.2.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "^2.25.3",
+    "eslint-plugin-jsx-a11y": "^6.5.1",
+    "eslint-plugin-react": "^7.28.0",
+    "eslint-plugin-react-hooks": "^4.3.0",
+    "husky": ">=6",
+    "lint-staged": ">=10",
+    "prettier": "2.7.1"
+  },
+  "lint-staged": {
+    "*.js": "npm run lint",
+    "*.{js,css,md,html,json}": "npm run format"
   }
 }
