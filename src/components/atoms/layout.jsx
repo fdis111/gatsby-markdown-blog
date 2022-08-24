@@ -2,7 +2,7 @@ import * as React from 'react';
 import PropTypes from 'prop-types';
 import GlobalStyle from '../../style/globalStyles';
 import Container from './container';
-import Navbar from '../molecules/navbar/navbar';
+// import Navbar from '../molecules/navbar/navbar';
 import '../../style/typography.css';
 
 export default function Layout({ pageTitle, children }) {
@@ -10,7 +10,7 @@ export default function Layout({ pageTitle, children }) {
 		<>
 			<GlobalStyle />
 			<title>{pageTitle}</title>
-			<Navbar />
+			{/* <Navbar /> */}
 			<Container>
 				<main>
 					<div className="page-content">{children}</div>
