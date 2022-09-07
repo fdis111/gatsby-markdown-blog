@@ -4,6 +4,8 @@ date: '2022-09-07'
 title: 'How Box Model Works'
 ---
 
+# How Box Model Works
+
 Hi, today we’ll talk about something every person who writes code for web browsers should understand. We’ll talk about Box Model.
 
 If you have never heard about box model, don’t panic i we’ll cover everything you need to know about Box Model.
@@ -34,7 +36,7 @@ You should keep in mind with block elements :
 - Padding, margin and border will cause other elements to be pushed away from the box.
 - The box will extend in the inline direction to fill the space available in its container. In most cases, the box will become as wide as its container, filling up 100% of the space available.
 
-Among the elements of type blocks, we can quote: <div>, <h1>, <p>, …
+Among the elements of type blocks, we can quote: `<div>`, `<h1>`, `<p>`, …
 
 Exemple :
 
@@ -54,7 +56,7 @@ Exemple :
 </body>
 ```
 
-![box model fig 1.png](https://res.cloudinary.com/dxtggeaor/image/upload/v1662545532/francoisdisubi.com/box%20models/box_model_fig_1_tr116i.png)
+![box model fig 1.png](https://res.cloudinary.com/dxtggeaor/image/upload/v1662554426/francoisdisubi.com/box%20models/frame_chrome_mac_dark_ukfcxc.png)
 
 ### Inline elements
 
@@ -77,16 +79,16 @@ Exemple :
 At <strong>211 degrees</strong>, <a href="https://en.wikipedia.org/wiki/Water">water</a>  is <em>hot</em>.
 ```
 
-![box model fig 2.png](https://res.cloudinary.com/dxtggeaor/image/upload/v1662545533/francoisdisubi.com/box%20models/box_model_fig_2_ixqkul.png)
+![box model fig 2.png](https://res.cloudinary.com/dxtggeaor/image/upload/v1662554426/francoisdisubi.com/box%20models/frame_chrome_mac_dark_1_fgtqke.png)
 
-### Parts of a box
+## Parts of a box
 
 The box model is composed of :
 
-- **Content box**: The area where your content is displayed; size it using properties like `[inline-size](https://developer.mozilla.org/en-US/docs/Web/CSS/inline-size)` and `[block-size](https://developer.mozilla.org/en-US/docs/Web/CSS/block-size)` or `[width](https://developer.mozilla.org/en-US/docs/Web/CSS/width)` and `[height](https://developer.mozilla.org/en-US/docs/Web/CSS/height)`.
-- **Padding box**: The padding sits around the content as white space; size it using `[padding](https://developer.mozilla.org/en-US/docs/Web/CSS/padding)` and related properties.
-- **Border box**: The border box wraps the content and any padding; size it using `[border](https://developer.mozilla.org/en-US/docs/Web/CSS/border)` and related properties.
-- **Margin box**: The margin is the outermost layer, wrapping the content, padding, and border as whitespace between this box and other elements; size it using `[margin](https://developer.mozilla.org/en-US/docs/Web/CSS/margin)` and related properties.
+- **Content box**: The area where your content is displayed; size it using properties like `inline-size` and `block-size` or `width` and `height`.
+- **Padding box**: The padding sits around the content as white space; size it using `padding` and related properties.
+- **Border box**: The border box wraps the content and any padding; size it using `border` and related properties.
+- **Margin box**: The margin is the outermost layer, wrapping the content, padding, and border as whitespace between this box and other elements; size it using `margin` and related properties.
 
 ![box model fig 3.png](https://res.cloudinary.com/dxtggeaor/image/upload/v1662545537/francoisdisubi.com/box%20models/box_model_fig_3_hsb8sc.png)
 
@@ -109,7 +111,7 @@ If we assume that a box has the following CSS:
 The *actual*
  space taken up by the box will be 410px wide (350 + 25 + 25 + 5 + 5) and 210px high (150 + 25 + 25 + 5 + 5).
 
-**[The alternative CSS box model](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/The_box_model#the_alternative_css_box_model)**
+## The alternative CSS box model
 
 In the alternative box model, any width is the width of the visible box on the page. The content area width is that width minus the width for the padding and border (see image below). No need to add up the border and padding to get the real size of the box.
 
@@ -134,16 +136,3 @@ If we assume the box has the same CSS as above:
   border: 5px solid black;
 }
 ```
-
-### Changer le type d’un element HTML avec la proprietés CSS display
-
-The CSS display property determines how an HTML element should be displayed in the browser.
-
-The CSS display property can take the following values:
-
-- **block** : allows to display an element as a block
-- **inline** : Displays an element as an inline-level element
-- **inline-block** : Displays an element as an inline-level block container. The element itself is formatted as an inline element, but you can apply height and width values
-- **none** : remove completly
-
-the CSS property display accepts others like flex, grid, .... which modify the way the content of the HTML element on which they are applied will be aligned.
