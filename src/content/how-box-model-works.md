@@ -4,6 +4,8 @@ date: '2022-09-07'
 title: 'How Box Model Works'
 ---
 
+# How Box Model Works
+
 Hi, today we’ll talk about something every person who writes code for web browsers should understand. We’ll talk about Box Model.
 
 If you have never heard about box model, don’t panic i we’ll cover everything you need to know about Box Model.
@@ -23,7 +25,7 @@ In HTML we have two kinds of elements:
 1. Blocks elements
 2. Inline elements
 
-## Block elements
+### Block elements
 
 The elements of type blocks are those which occupy by default 100 %, of the width available in a container, of this fact the elements of type blocks introduce a return to the line thus we can have only one element of type block by line.
 
@@ -34,7 +36,7 @@ You should keep in mind with block elements :
 - Padding, margin and border will cause other elements to be pushed away from the box.
 - The box will extend in the inline direction to fill the space available in its container. In most cases, the box will become as wide as its container, filling up 100% of the space available.
 
-Among the elements of type blocks, we can quote: <div>, <h1>, <p>, …
+Among the elements of type blocks, we can quote: `<div>`, `<h1>`, `<p>`, …
 
 Exemple :
 
@@ -56,7 +58,7 @@ Exemple :
 
 ![box model fig 1.png](https://res.cloudinary.com/dxtggeaor/image/upload/v1662554426/francoisdisubi.com/box%20models/frame_chrome_mac_dark_ukfcxc.png)
 
-## Inline elements
+### Inline elements
 
 The elements of type inline are that occupy by default only the width of their content, so several elements of type inline can follow each other on a line.
 
