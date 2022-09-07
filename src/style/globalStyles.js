@@ -1,4 +1,4 @@
-import { createGlobalStyle } from "styled-components";
+import { createGlobalStyle } from 'styled-components';
 
 const GlobalStyle = createGlobalStyle`
   *{
@@ -15,6 +15,10 @@ const GlobalStyle = createGlobalStyle`
   ul, ol {
     list-style-position: inside;
     margin-left: 2em;
+  }
+  
+  img{
+    max-width: 100%;
   }
 `;
 
