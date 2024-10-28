@@ -1,5 +1,5 @@
 ---
-slug: 'bien-structurer-l-etat-de-ses-composants-react-grouper-les-etats'
+slug: '/stories/bien-structurer-l-etat-de-ses-composants-react-grouper-les-etats'
 date: '2024-10-20'
 title: "Bien structurer l'état de ses composants react Partie 1: Grouper les états"
 language: 'french'
