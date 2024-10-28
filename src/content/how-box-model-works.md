@@ -2,6 +2,7 @@
 slug: '/stories/how-box-model-works'
 date: '2022-09-07'
 title: 'How Box Model Works'
+language: 'english'
 ---
 
 # How Box Model Works

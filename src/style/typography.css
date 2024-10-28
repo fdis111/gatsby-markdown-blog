@@ -13,7 +13,7 @@ main {
 		Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
 	line-height: 1.6rem;
 	color: #1d1d1f;
-	font-size: 1rem;
+	font-size: 0.9rem;
 	color: #1c3f60;
 }
 
@@ -22,10 +22,6 @@ a {
 
 	font-weight: 600;
 	text-decoration: none;
-}
-
-h1 {
-	color: #121212;
 }
 
 h1 {
