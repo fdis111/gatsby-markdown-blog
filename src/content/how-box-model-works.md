@@ -3,6 +3,7 @@ slug: '/stories/how-box-model-works'
 date: '2022-09-07'
 title: 'How Box Model Works'
 language: 'english'
+cover: 'https://res.cloudinary.com/dvrppkins/image/upload/v1730150426/pexels-cottonbro-4553183_n3dhho.webp'
 ---
 
 # How Box Model Works

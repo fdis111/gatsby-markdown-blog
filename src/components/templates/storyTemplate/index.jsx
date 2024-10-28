@@ -8,7 +8,9 @@ import { Link } from 'gatsby';
 import StoryTemplateContsainer from './style';
 
 export default function StoryTemplate({ frontmatter, rawMarkdownBody }) {
-	const { title } = frontmatter;
+	const { title, cover } = frontmatter;
+
+	console.log(cover);
 
 	const MarkdownComponent = {
 		code({ node, inline, className, children, ...props }) {
@@ -33,17 +35,28 @@ export default function StoryTemplate({ frontmatter, rawMarkdownBody }) {
 	};
 
 	return (
-		<Layout>
-			<StoryTemplateContsainer>
-				<ReactMarkdown components={MarkdownComponent}>
-					{rawMarkdownBody}
-				</ReactMarkdown>
-				<div>
-					<p>
-						<Link to="/stories">&#8592; Stories</Link>
-					</p>
-				</div>
-			</StoryTemplateContsainer>
-		</Layout>
+		<>
+			<div
+				style={{
+					margin: 'auto',
+					minHeight: '500px',
+					width: '100vw',
+					background: `url("${cover}")`,
+					backgroundSize: 'cover',
+				}}
+			/>
+			<Layout>
+				<StoryTemplateContsainer>
+					<ReactMarkdown components={MarkdownComponent}>
+						{rawMarkdownBody}
+					</ReactMarkdown>
+					<div>
+						<p>
+							<Link to="/stories">&#8592; Stories</Link>
+						</p>
+					</div>
+				</StoryTemplateContsainer>
+			</Layout>
+		</>
 	);
 }

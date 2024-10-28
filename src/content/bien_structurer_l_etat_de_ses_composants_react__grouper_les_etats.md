@@ -1,11 +1,12 @@
 ---
-slug: '/stories/bien-structurer-l-etat-de-ses-composants-react-grouper-les-etats'
+slug: '/stories/structurer-l-etat-de-ses-composants-react-grouper-les-etats'
 date: '2024-10-20'
-title: "Bien structurer l'état de ses composants react Partie 1: Grouper les états"
+title: "Structurer l'état de ses composants react : Grouper les états"
 language: 'french'
+cover: 'https://res.cloudinary.com/dvrppkins/image/upload/v1730150426/pexels-cottonbro-4553183_n3dhho.webp'
 ---
 
-# Bien structurer l'état de ses composants react. Partie 1: Grouper les états
+# Structurer l'état de ses composants react : Grouper les états
 
 Dans React, le state d’un composant est un objet qui contient des données qui, en changeant, peuvent impacter le rendu ou le comportement d’un composant.
 
