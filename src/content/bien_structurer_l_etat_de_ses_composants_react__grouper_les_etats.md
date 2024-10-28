@@ -17,7 +17,7 @@ En effet, tu dois faire attention à ne pas avoir des états redondants ou dupli
 
 Dans cette série d’articles, nous allons voir quelques règles qui peuvent t’aider à bien structurer l'état de tes composants de manière à éviter les states redondants ou dupliqués et les erreurs de mise à jour.
 
-## Part 1 : Grouper les états
+## Grouper les états
 
 Le premier principe que nous allons voir concerne le groupement de plusieurs variables du state dans un seul objet.
 Il t’arrive peut-être de te demander si tu dois créer une variable pour chaque état dans ton composant ou bien créer un objet qui va regrouper plusieurs états.
