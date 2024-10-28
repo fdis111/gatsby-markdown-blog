@@ -20,7 +20,7 @@ export default function HomeTemplate() {
 				</p>
 
 				<p>
-					Currently I work at{' '}
+					I&apos;m currently working at{' '}
 					<a href={kinshasadigitalAcademy} target="blank">
 						Kinshasa Digital Academy
 					</a>{' '}

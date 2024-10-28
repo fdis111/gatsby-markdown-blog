@@ -7,6 +7,10 @@ const GlobalStyle = createGlobalStyle`
     box-sizing: border-box;
   }
   
+  body{
+    background: #fff9f3;
+
+  }
   .page-content{
     padding: 1.5rem 0;
   }
@@ -16,9 +20,15 @@ const GlobalStyle = createGlobalStyle`
     list-style-position: inside;
     margin-left: 2em;
   }
+  li{
+    margin: .5rem 0;
+  }
   
   img{
     max-width: 100%;
+    margin: 1rem 0;
+
+
   }
 `;
 

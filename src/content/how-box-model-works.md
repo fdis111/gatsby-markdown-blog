@@ -14,7 +14,7 @@ So let go.
 
 ## What is Box model
 
-The term Box Model refers to behaviour of HTML elements in web browsers and how CSS property can change this behaviour.
+The term Box Model refers to behavior of HTML elements in web browsers and how CSS property can change this behavior.
 
 ## Types of HTML Elements
 
