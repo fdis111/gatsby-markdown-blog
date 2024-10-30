@@ -20,7 +20,6 @@ export default function StoryTemplate({ frontmatter, rawMarkdownBody }) {
 					style={gruvboxDark}
 					language={match[1]}
 					PreTag="div"
-					showLineNumbers
 					lineNumberContainerStyle
 					{...props}
 				>

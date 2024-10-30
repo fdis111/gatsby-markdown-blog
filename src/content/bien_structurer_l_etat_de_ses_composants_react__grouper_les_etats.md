@@ -177,9 +177,9 @@ Et maintenant le point suit le pointeur
 
 ![alt text](https://res.cloudinary.com/dvrppkins/image/upload/v1730127540/image2_gp4eou.gif)
 
-Ta petite application fonctionne correctement. En regardant le code, tu te rends compte que les variables d'état "positionY" et "positionX" changent souvent ensemble. Si nous modifions l’une sans l’autre, cela peut entraîner des comportements inattendus.
+Ta petite application fonctionne correctement. En regardant le code, tu te rends compte que les variables d'état `positionY` et `positionX` changent souvent ensemble. Si nous modifions l’une sans l’autre, cela peut entraîner des comportements inattendus.
 
-Par exemple, si tu modifies uniquement la valeur de "positionY" sans toucher à celle de "positionX", voici le comportement que tu auras :
+Par exemple, si tu modifies uniquement la valeur de `positionY` sans toucher à celle de `positionX`, voici le comportement que tu auras :
 
 ```js
 // ...
